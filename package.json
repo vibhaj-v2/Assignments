@@ -1,0 +1,17 @@
+{
+  "name": "htmlproject",
+  "version": "1.0.0",
+  "description": "Our Goal is Success",
+  "main": "index.js",
+  "scripts": {
+    "compile-styles": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/main.scss css/styles.css",
+    "css-minify": "cleancss --format breaksWith=lf --source-map --source-map-inline-sources --output css/styles.min.css css/styles.css",
+    "process-styles": "npm run compile-styles && npm run css-minify"
+  },
+  "author": "Vibha",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-css-cli": "^5.3.0",
+    "node-sass": "^6.0.0"
+  }
+}
